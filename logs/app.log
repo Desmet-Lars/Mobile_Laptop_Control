@@ -1,0 +1,82 @@
+2024-12-22 01:27:41,672 INFO: Application startup [in app.py:89]
+2024-12-22 01:28:34,478 INFO: Application startup [in app.py:89]
+2024-12-22 01:29:36,157 INFO: Application startup [in app.py:89]
+2024-12-22 01:30:55,908 INFO: Application startup [in app.py:89]
+2024-12-22 01:31:43,438 INFO: Application startup [in app.py:89]
+2024-12-22 01:31:55,557 INFO: Application startup [in app.py:89]
+2024-12-22 01:33:40,278 INFO: Application startup [in app.py:89]
+2024-12-22 01:35:43,871 INFO: Application startup [in app.py:89]
+2024-12-22 01:35:44,945 ERROR: Error rendering index.html: index.html [in app.py:174]
+Traceback (most recent call last):
+  File "app.py", line 172, in index
+    return render_template('index.html')
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2024-12-22 01:35:45,848 ERROR: Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. [in app.py:184]
+Traceback (most recent call last):
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 179, in favicon
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\helpers.py", line 590, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\werkzeug\utils.py", line 587, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-12-22 01:35:46,765 ERROR: Error rendering index.html: index.html [in app.py:174]
+Traceback (most recent call last):
+  File "app.py", line 172, in index
+    return render_template('index.html')
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\desme\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2024-12-22 01:36:16,644 INFO: Application startup [in app.py:89]
+2024-12-22 01:36:22,796 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 5.5, 'memory': 37.9, 'battery': 44, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:36:27,861 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 5.1, 'memory': 37.8, 'battery': 44, 'memory_total': '31.2GB', 'memory_used': '11.8GB'}} [in app.py:165]
+2024-12-22 01:36:28,956 INFO: Command executed: brightness, Response: Brightness set to 87% [in app.py:162]
+2024-12-22 01:36:30,182 INFO: Command executed: brightness, Response: Brightness set to 25% [in app.py:162]
+2024-12-22 01:36:32,811 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 5.4, 'memory': 37.7, 'battery': 44, 'memory_total': '31.2GB', 'memory_used': '11.8GB'}} [in app.py:165]
+2024-12-22 01:36:33,515 INFO: Command executed: brightness, Response: Brightness set to 57% [in app.py:162]
+2024-12-22 01:36:34,260 INFO: Command executed: brightness, Response: Brightness set to 79% [in app.py:162]
+2024-12-22 01:36:37,929 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 4.5, 'memory': 37.7, 'battery': 44, 'memory_total': '31.2GB', 'memory_used': '11.8GB'}} [in app.py:165]
+2024-12-22 01:36:42,813 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 5.0, 'memory': 37.5, 'battery': 44, 'memory_total': '31.2GB', 'memory_used': '11.7GB'}} [in app.py:165]
+2024-12-22 01:36:47,827 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 5.8, 'memory': 37.5, 'battery': 44, 'memory_total': '31.2GB', 'memory_used': '11.7GB'}} [in app.py:165]
+2024-12-22 01:47:48,050 INFO: Application startup [in app.py:89]
+2024-12-22 01:47:50,510 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 8.3, 'memory': 38.0, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:47:53,163 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 7.2, 'memory': 38.0, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:47:56,431 INFO: Command executed: media_play, Response: Media played/paused [in app.py:162]
+2024-12-22 01:47:58,157 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 7.1, 'memory': 38.0, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:47:58,171 INFO: Command executed: media_play, Response: Media played/paused [in app.py:162]
+2024-12-22 01:48:03,261 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 5.3, 'memory': 37.9, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:48:08,181 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 6.5, 'memory': 37.9, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:48:13,338 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 6.0, 'memory': 38.0, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:48:18,228 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 8.5, 'memory': 38.0, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:48:23,170 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 5.4, 'memory': 38.0, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
+2024-12-22 01:48:28,168 INFO: Command executed: system_info, Response: {'status': 'success', 'data': {'cpu': 6.8, 'memory': 38.0, 'battery': 39, 'memory_total': '31.2GB', 'memory_used': '11.9GB'}} [in app.py:165]
